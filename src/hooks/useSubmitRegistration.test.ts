@@ -75,7 +75,8 @@ describe("useSubmitRegistration hook integration", () => {
 		});
 
 		render(_jsx(HookAccessor, {}));
-		let result: any; // develop
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		let result: any;
 		await act(async () => {
 			result = await submitFn(validPayload);
 		});
