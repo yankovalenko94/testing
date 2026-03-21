@@ -75,7 +75,7 @@ describe("useSubmitRegistration hook integration", () => {
 		});
 
 		render(_jsx(HookAccessor, {}));
-		let result: any;
+		let result: any; //c dcdfv
 		await act(async () => {
 			result = await submitFn(validPayload);
 		});
