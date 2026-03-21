@@ -5,8 +5,8 @@ export default mergeConfig(
 	viteConfig,
 	defineConfig({
 		test: {
+			environment: "jsdom",
 			globals: true,
-			environment: "node",
 			pool: "threads", // or use 'forks' with alias
 			alias: {
 				"@exodus/bytes/encoding-lite.js": "@exodus/bytes/encoding-lite.js",
